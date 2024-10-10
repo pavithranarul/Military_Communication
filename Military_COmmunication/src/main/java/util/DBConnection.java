@@ -11,7 +11,7 @@ public class DBConnection {
             // Use the MySQL driver
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Make sure the database URL, username, and password are correct
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/military_db", "root", "Pavi3@arul");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/military_db", "username", "password");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
